@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+link_18.txt
 
 # testing
 /coverage
