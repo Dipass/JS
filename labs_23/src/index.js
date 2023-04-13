@@ -11,8 +11,6 @@ import Work8 from './Ex/Work8';
 import Work9 from './Ex/Work9';
 import Work10 from './Ex/Work10';
 
-
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     // <Work1 />
