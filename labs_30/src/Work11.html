@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work11</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body>
+    <div ng-controller="UserController">
+        <h1>Users:</h1>
+        <ul>
+            <li ng-repeat="user in users | filter: 'а'">{{ user.name }}</li>
+        </ul>
+    </div>
+	<script src="./Work11.js"></script>
+</body>
+</html>

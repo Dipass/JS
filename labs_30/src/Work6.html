@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work6</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+	<h1>Сортування користувачів</h1>
+	<input type="checkbox" ng-model="ascending"> Сортувати за зростанням
+	<table>
+	  <thead>
+		<tr>
+		  <th>Ім'я</th>
+		  <th>Прізвище</th>
+		  <th>Вік</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		<tr ng-repeat="user in users | orderBy:'name':ascending">
+		  <td>{{ user.name }}</td>
+		  <td>{{ user.surname }}</td>
+		  <td>{{ user.age }}</td>
+		</tr>
+	  </tbody>
+	</table>
+	<script src="./Work6.js"></script>
+</body>
+</html>

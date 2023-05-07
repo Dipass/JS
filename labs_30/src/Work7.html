@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+	<h2>Список користувачів</h2>
+	<div>
+	  <label>Сортування за полем:</label>
+	  <select ng-model="selectedField" ng-change="changeSortingField()">
+		<option value="name">Ім'я</option>
+		<option value="age">Вік</option>
+		<option value="email">Email</option>
+	  </select>
+	</div>
+	<ul>
+	  <li ng-repeat="user in users | orderBy: sortingField">{{ user.name }}, {{ user.age }}, {{ user.email }}</li>
+	</ul>
+	<script src="./Work7.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Work8</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="UserController">
+	  <h1>Список користувачів</h1>
+	  <table>
+		<thead>
+		  <tr>
+			<th>Ім'я</th>
+			<th>Прізвище</th>
+			<th>Email</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr ng-repeat="user in users | limitTo:3">
+			<td>{{user.firstName}}</td>
+			<td>{{user.lastName}}</td>
+			<td>{{user.email}}</td>
+		  </tr>
+		</tbody>
+	  </table>
+	</div>
+	<script src="Work8.js"></script>
+</body>
+</html>
